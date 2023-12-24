@@ -2,50 +2,74 @@
 
 <br>
 
-## FLYAI docs 주소
+### FLYAI docs 주소
 - [https://flyai4-1.gitbook.io/docs/](https://flyai4-1.gitbook.io/docs/)
   
 <br>
 
 ## FLYAI docs 작성 가이드
-*아래 예시 이미지는 현재와 다른 곳에서 가져온 것으로 방법만 확인*
+
 
 <br>
 
-### 1. FLYAI4/docs repo에서 `Add file-Create new file` 버튼 클릭
+### 1. FLYAI4/docs repo에서 본인 repo로 fork
 
-<img width="917" alt="스크린샷 2023-08-04 오후 5 33 52" src="https://github.com/C-auto/share-docs/assets/91866763/f864891d-4f1f-4704-a2ef-2d6e78b4dec0">
+![image](https://github.com/FLYAI4/docs/assets/91866763/7f4dceac-dbbd-44c3-9f78-27a2c6d518aa)
 
-<br>
-
-### 2. 파일경로와 이름을 설정 후 내용 작성
-- 파일경로는 우선 `DataScience`, `DataEngineering`, `Infra` 3개로 운영할 예정(새로운 경로가 필요할 경우 관리자에게 요청해주세요!!)
-- 파일명 작성 후 현재 파일 경로와 파일명은 잘 확인해주세요!!(파일경로/파일명 이 branch 명으로 설정해야만 이후 git action이 적용됩니다.)
-- 내용 작성 후 commit change 버튼 눌러주세요!!(내용 임시 저장을 위해 작성 전 중간중간에 해당 버튼눌러 저장해주세요.)
-
-<img width="1265" alt="스크린샷 2023-08-04 오후 5 40 10" src="https://github.com/C-auto/share-docs/assets/91866763/c6fcc603-63b0-4bc3-b280-821bf1cef62e">
+![image](https://github.com/FLYAI4/docs/assets/91866763/ec17acc6-421b-4a17-a506-95b2b3c023e8)
 
 <br>
 
-### 3. 브런치 명 설정
-- 브런치 명은 `.md`를 제외한 폴더명/파일명 으로 생성해주세요
-- 예시기준 `python/hello_test` 
+### 2. 파일 작업 전 branch 최신 상태 유지
+- Sync fork - Update branch
 
-<img width="475" alt="스크린샷 2023-08-04 오후 5 42 03" src="https://github.com/C-auto/share-docs/assets/91866763/d918350a-f751-4548-a564-b9c761e3a5c3">
-
-<br>
-
-### 4. PR 생성 후 git action 적용대기
-- PR 생성 후 push할 때 자동으로 작성자, 작성일자가 추가되는 기능이 적용되어 있습니다.
-- git action 적용까지 20초 정도 대기 해주세요
-
-<img width="926" alt="스크린샷 2023-08-04 오후 5 47 06" src="https://github.com/C-auto/share-docs/assets/91866763/ff5ef7b5-7247-495d-89cc-be6cd9554134">
+![스크린샷 2023-12-24 오후 10 21 06](https://github.com/FLYAI4/docs/assets/91866763/2d68e253-08ca-44dd-aa5b-99de8fd9ce80)
 
 <br>
 
-### 5. gitbook에 정상 업로드 확인 및 팀원 공유
-- [링크](https://flyai4-1.gitbook.io/docs/) 접속 후 업로드 확인
+### 3. 파일경로와 파일명 설정 후 내용 작성
+- 로컬에서 작업해도 괜찮고, markdown 파일을 작성하기 때문에 아래와 같이 github에서 작업 가능
+- 파일경로는 우선 `DataScience`, `DataEngineering`, `Infra` 3개로 운영할 예정 (새로운 폴더가 필요할 경우 관리자에게 요청!!)
+- 현재 생성된 폴더명 유지, 파일명은 자유롭게 작성 가능
+- commit changes 버튼 클릭
+
+
+![스크린샷 2023-12-24 오후 10 22 34](https://github.com/FLYAI4/docs/assets/91866763/a3d4ed3f-6ef5-4acb-b585-b97446e4eec2)
+
+![스크린샷 2023-12-24 오후 10 24 12](https://github.com/FLYAI4/docs/assets/91866763/d7ad5f97-bc2d-4321-9855-474ca1bba976)
+
+
+
+<br>
+
+### 3. 브런치 설정
+- 브런치명 규칙 `폴더명/파일명` (브런치 관리를 위해 규칙 설정)
+- 예시 이미지 기준 `DataScience/README`
+
+![스크린샷 2023-12-24 오후 10 28 47](https://github.com/FLYAI4/docs/assets/91866763/5494c4fc-4906-4113-a784-cec1a2a4d476)
+
+
+
+<br>
+
+### 4. FLYAI4/docs repo로 설정 후 PR 생성
+- `compare accross forks`를 누르고 FLYAI4/docs repo 로 베이스 repo로 설정
+- base repository가 제대로 설정되었는지 확인 후 `Create pull request` 클릭
+
+![스크린샷 2023-12-24 오후 10 36 48](https://github.com/FLYAI4/docs/assets/91866763/67d705c3-9f68-4f24-8a63-b7c1f00af0dc)
+
+
+<br>
+
+### 5. 관리자가 PR 승인할 수 있도록 설명 추가 후 PR 요청
+- 내용 작성 후 `Create pull request` 클릭
+
+![스크린샷 2023-12-24 오후 10 37 52](https://github.com/FLYAI4/docs/assets/91866763/ad045a9b-d8a0-49d8-a16c-5e3e21f1a208)
+
+
+### 6. gitbook에 정상 업로드 확인
+- 관리자가 PR 및 gitbook 업로드 확인 후 회신
+- 회신 받으면 [링크](https://flyai4-1.gitbook.io/docs/) 접속 후 업로드 확인
 - 팀원 공유
 
 
-<span style="background-color:#fff5b1">Author : robert-min / Last Update : 2023-12-24</span>
